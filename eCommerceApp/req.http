@@ -1,0 +1,35 @@
+//req.http
+
+###get all products
+GET http://localhost:4000/product-api/products
+
+###create product req
+POST http://localhost:4000/product-api/products
+Content-Type: application/json
+
+{
+  "productName":"TV",
+  "price":150000,
+  "brand":"Samsung"
+}
+
+###get all users
+GET http://localhost:4000/user-api/users
+
+###create user req
+POST http://localhost:4000/user-api/users
+Content-Type: application/json
+
+{
+    "name":"mickey",
+    "email":"mickey@gmail.com",
+    "password":"mickey",
+    "cart":[]
+}
+
+###add product to users cart
+PUT http://localhost:4000/user-api/user-cart/user-id/698191b64e2c405aa6fc4566/product-id/69819598f89ea037d50cdc6e
+
+###read user by id
+GET http://localhost:4000/user-api/users/69817f461d2fbfb2b7b3d3ab
+
